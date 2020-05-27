@@ -25,9 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bbb-alert:before {
-  content: "\e958";
+/*added my me */
+.icon-bbb-pray:before {
+  content: "\e923";
 }
+
 .icon-bbb-mute:before {
   content: "\e932";
 }
@@ -183,7 +185,7 @@
   content: "\e911";
 }
 .icon-bbb-applause:before {
-  content: "\e923";
+  content: "\e918";
 }
 .icon-bbb-thumbs_up:before {
   content: "\e92d";
