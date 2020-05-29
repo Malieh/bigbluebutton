@@ -1,8 +1,16 @@
 #!/bin/bash
 
-wget https://github.com/CVMsnc/bigbluebutton/releases/latest/download/bigbluebutton-html5.tar.gz
-tar -xvf bigbluebutton-html5.tar.gz
-rm bigbluebutton-html5.tar.gz
+#wget https://github.com/CVMsnc/bigbluebutton/releases/latest/download/bigbluebutton-html5.tar.gz
+#tar -xvf bigbluebutton-html5.tar.gz
+#rm bigbluebutton-html5.tar.gz
+
+#Changed by Beri to use our own customized folder and 7zip instead of gz
+wget https://github.com/Malieh/bigbluebutton/blob/develop/customs/bigbluebutton-html5.7z
+
+#Changed by Malieh to decompress 7z
+#tar -xvf bigbluebutton-html5.7z
+rm bigbluebutton-html5.7z
+
 cp /usr/share/meteor/bundle/programs/server/assets/app/config/settings.yml settings.yml
 cp /usr/share/meteor/bundle/mongo* .
 cp /usr/share/meteor/bundle/systemd_start.sh .
